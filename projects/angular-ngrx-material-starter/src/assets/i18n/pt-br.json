@@ -20,6 +20,7 @@
   "anms.features.documentation": "Docs",
   "anms.features.fontawesome": "Fácil de usar vector icons e social logos",
   "anms.features.guide": "Guide",
+  "anms.features.iris": "A Plataforma de Dados InterSystems IRIS estabelece um novo patamar de desempenho para o rápido desenvolvimento e implementação de aplicações fundamentais.",
   "anms.features.lazyloading.description": "Rápido carregamento inicial com carregamento por demanda de feature modules",
   "anms.features.lazyloading.title": "Carregamento por demanda",
   "anms.features.ngrx": "Fluxo de dados unidirecional alimentado por Observables RxJS",
@@ -59,6 +60,6 @@
   "anms.settings.themes.sticky-header": "",
   "anms.settings.themes.title": "Themes",
   "anms.settings.title": "Configurações",
-  "anms.title.long": "Angular Ngrx Material Início",
-  "anms.title.short": "Angular Starter"
+  "anms.title.long": "IRIS Angular Material Início",
+  "anms.title.short": "Starter"
 }

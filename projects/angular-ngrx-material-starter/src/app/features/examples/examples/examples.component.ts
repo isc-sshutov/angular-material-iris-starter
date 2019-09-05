@@ -20,10 +20,10 @@ export class ExamplesComponent implements OnInit {
   isAuthenticated$: Observable<boolean>;
 
   examples = [
+    { link: 'crud', label: 'anms.examples.menu.crud' },
     { link: 'todos', label: 'anms.examples.menu.todos' },
     { link: 'stock-market', label: 'anms.examples.menu.stocks' },
     { link: 'theming', label: 'anms.examples.menu.theming' },
-    { link: 'crud', label: 'anms.examples.menu.crud' },
     {
       link: 'simple-state-management',
       label: 'anms.examples.menu.simple-state-management'

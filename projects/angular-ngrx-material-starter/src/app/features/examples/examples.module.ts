@@ -29,6 +29,7 @@ import { ExamplesEffects } from './examples.effects';
 import { UserComponent } from './simple-state-management/components/user.component';
 import { UserService } from './simple-state-management/user.service';
 import { ElementsComponent } from './elements/elements.component';
+import { BookListComponent } from './crud/components/book-list.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(
@@ -72,7 +73,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormComponent,
     NotificationsComponent,
     UserComponent,
-    ElementsComponent
+    ElementsComponent,
+    BookListComponent
   ],
   providers: [StockMarketService, UserService]
 })

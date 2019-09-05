@@ -20,6 +20,7 @@
   "anms.features.documentation": "文档",
   "anms.features.fontawesome": "易用的适量图标和社交图标",
   "anms.features.guide": "帮助",
+  "anms.features.iris": "InterSystems IRIS 数据平台为应用程序的快速开发与部署效率提升到了一个新的高度。",
   "anms.features.lazyloading.description": "使用懒加载模块可以得到更快的启动时间",
   "anms.features.lazyloading.title": "懒加载",
   "anms.features.ngrx": "基于 RxJS 的单向数据流",
@@ -59,6 +60,6 @@
   "anms.settings.themes.sticky-header": "固定头部",
   "anms.settings.themes.title": "主题",
   "anms.settings.title": "设置",
-  "anms.title.long": "Angular NgRx Material 起步模版",
-  "anms.title.short": "Angular 起步模版"
+  "anms.title.long": "IRIS Angular Material 起步模版",
+  "anms.title.short": "起步模版"
 }

@@ -21,7 +21,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'todos',
+        redirectTo: 'crud/',
         pathMatch: 'full'
       },
       {

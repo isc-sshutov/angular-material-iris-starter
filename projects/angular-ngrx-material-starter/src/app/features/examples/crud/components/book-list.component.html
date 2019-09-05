@@ -1,0 +1,37 @@
+<mat-table class="books-table mat-elevation-z8" [dataSource]="books$">
+
+  <ng-container matColumnDef="id">
+      <mat-header-cell class="id-cell" *matHeaderCellDef>ID</mat-header-cell>
+      <mat-cell class="id-cell" *matCellDef="let book">{{book.id}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="description">
+      <mat-header-cell *matHeaderCellDef>Description</mat-header-cell>
+      <mat-cell class="description-cell"
+                *matCellDef="let book">{{book.description}}</mat-cell>
+
+  </ng-container>
+
+  <ng-container matColumnDef="author">
+      <mat-header-cell *matHeaderCellDef>Author</mat-header-cell>
+      <mat-cell class="author-cell"
+                *matCellDef="let book">{{book.author}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="title">
+    <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
+    <mat-cell class="title-cell"
+              *matCellDef="let book">{{book.title}}</mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+  <mat-row *matRowDef="let row; columns: displayedColumns"
+              (click)="onSelect(row)"></mat-row>
+
+</mat-table>
+<mat-paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
+<mat-card *ngFor="let book of books$ | async" [ngClass]="routeAnimationsElements" (click)="onSelect(book)">
+<h3>{{book.title}}</h3>
+<small>{{book.author}}</small>
+</mat-card>

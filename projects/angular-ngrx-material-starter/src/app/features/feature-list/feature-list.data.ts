@@ -11,6 +11,13 @@ export interface Feature {
 
 export const features: Feature[] = [
   {
+    name: 'InterSystems IRIS',
+    version: env.versions.iris,
+    description: 'anms.features.iris',
+    github: 'https://github.com/intersystems',
+    documentation: 'https://docs.intersystems.com/'
+  },
+  {
     name: 'Angular',
     version: env.versions.angular,
     description: 'anms.features.angular',
@@ -30,15 +37,6 @@ export const features: Feature[] = [
     description: 'anms.features.angular-cli',
     github: 'https://github.com/angular/angular-cli',
     documentation: 'https://cli.angular.io/'
-  },
-  {
-    name: 'NgRx',
-    version: env.versions.ngrx,
-    description: 'anms.features.ngrx',
-    github: 'https://github.com/ngrx/platform',
-    documentation: 'http://ngrx.github.io/',
-    medium:
-      'https://medium.com/@tomastrajan/object-assign-vs-object-spread-in-angular-ngrx-reducers-3d62ecb4a4b0'
   },
   {
     name: 'RxJS',
@@ -78,13 +76,6 @@ export const features: Feature[] = [
     description: 'anms.features.fontawesome',
     github: 'https://github.com/FortAwesome/Font-Awesome',
     documentation: 'https://fontawesome.com/icons'
-  },
-  {
-    name: 'Cypress',
-    version: env.versions.cypress,
-    description: 'anms.features.cypress',
-    github: 'https://github.com/cypress-io/cypress',
-    documentation: 'https://www.cypress.io/'
   },
   {
     name: 'anms.features.themes.title',

@@ -20,6 +20,7 @@
   "anms.features.documentation": "Documentation",
   "anms.features.fontawesome": "Icônes vectorielles faciles à utiliser et logos sociaux",
   "anms.features.guide": "Manuel",
+  "anms.features.iris": "InterSystems IRIS définit un niveau de performances jusqu’ici inégalé pour développer et déployer rapidement des applications importantes.",
   "anms.features.lazyloading.description": "Temps de démarrage plus rapide avec des modules fonctionnels chargés à la demande",
   "anms.features.lazyloading.title": "Chargement à la demande",
   "anms.features.ngrx": "Flux de données à sens unique alimenté par les Observables RxJS",
@@ -59,6 +60,6 @@
   "anms.settings.themes.sticky-header": "Entête fixe",
   "anms.settings.themes.title": "Thèmes",
   "anms.settings.title": "Paramètres",
-  "anms.title.long": "Kit de démarrage Angular NgRx Material",
+  "anms.title.long": "Kit de démarrage IRIS Angular Material",
   "anms.title.short": "Kit de démarrage"
 }

@@ -1,12 +1,13 @@
 const packageJson = require('../../../../package.json');
 
 export const environment = {
-  appName: 'Angular Ngrx Material Starter',
+  appName: 'IRIS Angular Material Starter',
   envName: 'PROD',
   production: true,
   test: false,
   i18nPrefix: '/angular-ngrx-material-starter',
   versions: {
+    iris: '2019.2',
     app: packageJson.version,
     angular: packageJson.dependencies['@angular/core'],
     ngrx: packageJson.dependencies['@ngrx/store'],

@@ -20,6 +20,7 @@
   "anms.features.documentation": "Dok.",
   "anms.features.fontawesome": "Ľahko použiteľné vektorové ikony a sociálne logá",
   "anms.features.guide": "Návod",
+  "anms.features.iris": "InterSystems IRIS je dátová platforma, ktorá stanovuje novú úroveň výkonu pre rýchly vývoj a nasadenie dôležitých aplikácií.",
   "anms.features.lazyloading.description": "Rýchlejší štartovací čas s lenivým nahrávaním modulov",
   "anms.features.lazyloading.title": "Lenivé nahrávanie",
   "anms.features.ngrx": "Jednosmerný tok dát s pomocou RxJS Observables",
@@ -59,6 +60,6 @@
   "anms.settings.themes.sticky-header": "",
   "anms.settings.themes.title": "Témy",
   "anms.settings.title": "Nastavenia",
-  "anms.title.long": "Angular NgRx Material Štartér",
-  "anms.title.short": "Angular Štartér"
+  "anms.title.long": "IRIS Angular Material Štartér",
+  "anms.title.short": "Štartér"
 }

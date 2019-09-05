@@ -3,11 +3,7 @@
   <div class="row">
     <div class="col-md-6">
       <h2>{{ 'anms.examples.crud.subtitle1' | translate }}</h2>
-      <mat-card *ngFor="let book of books$ | async" [ngClass]="routeAnimationsElements"
-        (click)=select(book)>
-        <h3>{{book.title}}</h3>
-        <small>{{book.author}}</small>
-      </mat-card>
+      <anms-book-list [books$]="books$" (select)="select($event)"></anms-book-list>
       <p *ngIf="(books$ | async)?.length === 0">{{'anms.examples.crud.empty' | translate}}</p>
       <button type="button" mat-fab color="primary" class="add" [ngClass]="routeAnimationsElements"
         *ngIf="!isEditing" (click)="addNew(bookForm)">

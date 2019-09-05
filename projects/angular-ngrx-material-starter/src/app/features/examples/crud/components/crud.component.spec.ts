@@ -9,11 +9,16 @@ import { SharedModule } from '../../../../shared/shared.module';
 
 import { State } from '../../examples.state';
 import { CrudComponent } from './crud.component';
+import { BookListComponent } from './book-list.component';
+import { BooksService } from '../books.service';
+import { of } from 'rxjs';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('CrudComponent', () => {
   let component: CrudComponent;
   let fixture: ComponentFixture<CrudComponent>;
   let store: MockStore<State>;
+  let booksService: BooksService;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -21,6 +26,7 @@ describe('CrudComponent', () => {
         SharedModule,
         NoopAnimationsModule,
         RouterTestingModule,
+        HttpClientTestingModule,
         TranslateModule.forRoot()
       ],
       providers: [
@@ -33,13 +39,16 @@ describe('CrudComponent', () => {
               }
             }
           }
-        })
+        }),
+        BooksService
       ],
-      declarations: [CrudComponent]
+      declarations: [CrudComponent, BookListComponent]
     }).compileComponents();
     store = TestBed.get(Store);
     fixture = TestBed.createComponent(CrudComponent);
     component = fixture.componentInstance;
+    booksService = TestBed.get(BooksService);
+    spyOn(booksService, 'getBooks').and.returnValue(of([]));
     fixture.detectChanges();
   }));
   it('should create', () => {

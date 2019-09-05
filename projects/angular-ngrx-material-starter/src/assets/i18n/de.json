@@ -20,6 +20,7 @@
   "anms.features.documentation": "Doku",
   "anms.features.fontawesome": "Einfach zu bedienende Vektor-Icons und soziale Logos",
   "anms.features.guide": "Anleitung",
+  "anms.features.iris": "InterSystems IRIS Data Platform setzt neue Maßstäbe für die Entwicklung und Implementierung unternehmenskritischer Anwendungen.",
   "anms.features.lazyloading.description": "Schnellere Startzeit mit Lazy Loaded Feature-Modulen",
   "anms.features.lazyloading.title": "Lazy Loading",
   "anms.features.ngrx": "Einweg-Datenfluss unterstützt von RxJS Observables",
@@ -59,6 +60,6 @@
   "anms.settings.themes.sticky-header": "",
   "anms.settings.themes.title": "Thema",
   "anms.settings.title": "Einstellungen",
-  "anms.title.long": "Angular NgRx Material Vorlage",
-  "anms.title.short": "Angular Vorlage"
+  "anms.title.long": "IRIS Angular Material Vorlage",
+  "anms.title.short": "Vorlage"
 }
