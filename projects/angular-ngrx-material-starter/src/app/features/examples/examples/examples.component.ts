@@ -13,8 +13,7 @@ import { State } from '../examples.state';
   selector: 'anms-examples',
   templateUrl: './examples.component.html',
   styleUrls: ['./examples.component.scss'],
-  animations: [routeAnimations],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  animations: [routeAnimations]
 })
 export class ExamplesComponent implements OnInit {
   isAuthenticated$: Observable<boolean>;

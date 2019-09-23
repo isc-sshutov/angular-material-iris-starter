@@ -31,7 +31,4 @@
 
 </mat-table>
 <mat-paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
-<mat-card *ngFor="let book of books$ | async" [ngClass]="routeAnimationsElements" (click)="onSelect(book)">
-<h3>{{book.title}}</h3>
-<small>{{book.author}}</small>
-</mat-card>
+

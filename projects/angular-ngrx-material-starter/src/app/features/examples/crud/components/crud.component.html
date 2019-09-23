@@ -14,7 +14,7 @@
       <span class="d-flex justify-content-between">
         <h2>{{ 'anms.examples.crud.subtitle2' | translate }}</h2>
         <span class="d-flex justify-content-end">
-          <span *ngIf="selectedBook$ | async as selectedBook">
+          <span *ngIf="selectedBook">
             <button mat-icon-button color="accent" *ngIf="!isEditing">
               <fa-icon icon="edit" (click)="edit(selectedBook)" [matTooltip]="'anms.examples.crud.tooltip.edit' | translate"
                 matTooltipPosition="above">
@@ -79,7 +79,7 @@
       </form>
 
       <ng-container *ngIf="!isEditing">
-        <div [ngClass]="routeAnimationsElements" *ngIf="selectedBook$ | async as selectedBook; else noSelectedBookTmpl">
+        <div [ngClass]="routeAnimationsElements" *ngIf="selectedBook; else noSelectedBookTmpl">
           <h3>{{ selectedBook.title }}</h3>
           <mat-divider></mat-divider>
           <p>{{ selectedBook.description }}</p>
