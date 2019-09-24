@@ -2,20 +2,21 @@
 Class book.Book Extends %Persistent
 {
 
-Property Title As %String(MAXLEN=220);
+Property Title As %String(MAXLEN = 220);
 
-Property Author As %String(MAXLEN=220);
+Property Author As %String(MAXLEN = 220);
 
 // Property Year As %String(MAXLEN=20);
 
-Property Description As %String(MAXLEN=22000);
+Property Description As %String(MAXLEN = 22000);
 
 /// Class to clear a book database and insert demo data
-ClassMethod ResetDemo() As %Status {
+ClassMethod ResetDemo() As %Status
+{
 	set sc=$$$OK
 	$$$QuitOnError(..%KillExtent())
 	set booksList=##class(util.BooksList).Get()
-	for i=0:1:booksList.%Size()-1 {
+	for i=0:1:10 { //booksList.%Size()-1 {
 		set bookObj=booksList.%Get(i)
 		set book=..%New()
 		set book.Title=bookObj.title

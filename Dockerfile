@@ -28,13 +28,11 @@ USER root
 
 ## Copy our default nginx config
 RUN mkdir /tmp/src
-COPY book /tmp/src
-COPY util /tmp/src
+COPY cls /tmp/src
 
 ## From 'builder' stage copy over the artifacts in dist folder to default nginx public folder
 RUN mkdir /opt/app
-COPY --from=ngbuilder /ng-app/dist/angular-ngrx-material-starter /opt/app
-COPY --from=ngbuilder /ng-app/dist/angular-ngrx-material-starter /opt/app/angular-ngrx-material-starter
+COPY --from=ngbuilder /ng-app/dist/ /opt/app/web
 
 # change permissions to IRIS user
 RUN chown -R ${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} /opt/app
@@ -49,9 +47,9 @@ USER irisowner
 # Compile the application code
 RUN iris start iris && \
     printf 'zn "USER" \n \
-    do $system.OBJ.Load("/tmp/src/AppInstaller.cls","c")\n \
+    do $system.OBJ.Load("/tmp/src/util/AppInstaller.cls","c")\n \
     do ##class(util.AppInstaller).Run()\n \
     zn "%%SYS"\n \
-    do ##class(SYS.Container).QuiesceForBundling()\n \ 
+    do ##class(SYS.Container).QuiesceForBundling()\n \
     h\n' | irissession IRIS \
 && iris stop iris quietly

@@ -1,42 +1,39 @@
-# Angular 8, NgRx and Angular Material Starter
+# Angular 8, Angular Material and InterSystems IRIS Starter
 
 by [@tomastrajan](https://twitter.com/tomastrajan)
-
-[![license](https://img.shields.io/github/license/tomastrajan/angular-ngrx-material-starter.svg)](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/LICENSE) [![All Contributors](https://img.shields.io/badge/all_contributors-37-orange.svg?style=flat-square)](#contributors) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Build Status](https://travis-ci.org/tomastrajan/angular-ngrx-material-starter.svg?branch=master)](https://travis-ci.org/tomastrajan/angular-ngrx-material-starter)
-[![Codecov](https://img.shields.io/codecov/c/github/tomastrajan/angular-ngrx-material-starter.svg)](https://codecov.io/gh/tomastrajan/angular-ngrx-material-starter)
-[![Twitter Follow](https://img.shields.io/twitter/follow/tomastrajan.svg?style=social&label=Follow)](https://twitter.com/tomastrajan)
 
 ![intro](https://raw.githubusercontent.com/tomastrajan/angular-ngrx-material-starter/master/meta-assets/intro.png)
 ![themes](https://raw.githubusercontent.com/tomastrajan/angular-ngrx-material-starter/master/meta-assets/themes.png)
 
 ## Table of Content
 
-- [Live Demo](https://tomastrajan.github.io/angular-ngrx-material-starter)
 - [Getting Started](#getting-started)
 - [Useful Commands](#useful-commands)
 - [Make It Your Own](#make-it-your-own)
 - [Goals](#goals)
 - [Learning Materials](#learning-materials)
-- [List of Projects Built Using This Starter](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/BUILT_WITH.md)
 - [Features](#features)
 - [Stack](#stack)
-- [Code of Conduct](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/CODE_OF_CONDUCT.md)
-- [Contributors Guide](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/CONTRIBUTING.md)
-- [Changelog](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/CHANGELOG.md) ( get notified about the newest releases, [follow Release Butler](https://twitter.com/releasebutler) on Twitter )
+- [Contributors Guide](https://github.com/intersystems-community/angular-material-iris-starter/blob/master/CONTRIBUTING.md)
 
 ## Getting started
 
 ```bash
-git clone https://github.com/tomastrajan/angular-ngrx-material-starter.git new-project
+git clone https://github.com/intersystems-community/angular-material-iris-starter.git new-project
 cd new-project
 npm install
-npm start
+ng build --watch
+```
+
+and then in another terminal window
+
+```bash
+docker-compose up
 ```
 
 ## Useful Commands
 
-- `npm start` - starts a dev server and opens browser with running app
-- `npm run start:prod` - runs full prod build and serves prod bundle
+- `ng build --watch --prod` - runs full prod build and serves prod bundle
 - `npm run test` - runs lint and tests
 - `npm run watch` - runs tests in watch mode
 - `npm run prettier` - runs prettier to format whole code base (`.ts` and `.scss`)

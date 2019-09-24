@@ -8,5 +8,4 @@ services:
     ports:
       - 7000:52773
     volumes:
-      - dist:/opt/app
-      - dist:/opt/app/angular-ngrx-material-starter
+      - ./dist:/opt/app/web
