@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Book } from './books.model';
 
-const endpoint = 'http://localhost:52773/rest/';
+const endpoint = '/rest/';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json; charset=utf-8'
