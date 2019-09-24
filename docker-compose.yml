@@ -1,0 +1,12 @@
+version: '2.4'
+services:
+  iris:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 7000:52773
+    volumes:
+      - dist:/opt/app
+      - dist:/opt/app/angular-ngrx-material-starter

@@ -39,7 +39,9 @@ COPY --from=ngbuilder /ng-app/dist/angular-ngrx-material-starter /opt/app/angula
 # change permissions to IRIS user
 RUN chown -R ${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} /opt/app
 RUN chown -R ${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} /tmp/src
-RUN echo "Redirect / /index.html" >/usr/irissys/httpd/conf/httpd-local.conf
+
+# add a redirect to index.html
+RUN echo "RedirectMatch ^/$ /index.html" >/usr/irissys/httpd/conf/httpd-local.conf
 
 # Change back to IRIS user
 USER irisowner
