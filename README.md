@@ -1,7 +1,5 @@
 # Angular 8, Angular Material and InterSystems IRIS Starter
 
-by [@tomastrajan](https://twitter.com/tomastrajan)
-
 ![intro](https://raw.githubusercontent.com/tomastrajan/angular-ngrx-material-starter/master/meta-assets/intro.png)
 ![themes](https://raw.githubusercontent.com/tomastrajan/angular-ngrx-material-starter/master/meta-assets/themes.png)
 
