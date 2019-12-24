@@ -12,7 +12,7 @@ export const environment = {
   test: false,
   i18nPrefix: '',
   versions: {
-    iris: '2019.3',
+    iris: '2019.4',
     app: packageJson.version,
     angular: packageJson.dependencies['@angular/core'],
     ngrx: packageJson.dependencies['@ngrx/store'],
