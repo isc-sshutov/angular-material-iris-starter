@@ -20,13 +20,21 @@
 git clone https://github.com/intersystems-community/angular-material-iris-starter.git new-project
 cd new-project
 npm install
-ng build --watch
+npm run -- ng build --watch
 ```
 
 and then in another terminal window
 
 ```bash
 docker-compose up
+```
+
+Your IRIS Community Edition server will be available on port 7000. You can open http://localhost:7000 to see your Angular application, and http://localhost:7000/csp/sys/UtilHome.csp to log into IRIS Community Edition Management Portal. Default username is \_system, password SYS -- system will prompt you for new password upon first login.
+
+If you want to rebuild a database container from scratch, you can do
+
+```bash
+docker-compose up --force-recreate --build
 ```
 
 ## Useful Commands
