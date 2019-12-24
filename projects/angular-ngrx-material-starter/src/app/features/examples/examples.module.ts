@@ -29,6 +29,7 @@ import { UserComponent } from './simple-state-management/components/user.compone
 import { UserService } from './simple-state-management/user.service';
 import { ElementsComponent } from './elements/elements.component';
 import { BookListComponent } from './crud/components/book-list.component';
+import { BooksService } from './crud/books.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(
@@ -74,7 +75,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ElementsComponent,
     BookListComponent
   ],
-  providers: [StockMarketService, UserService]
+  providers: [StockMarketService, UserService, BooksService]
 })
 export class ExamplesModule {
   constructor() {}

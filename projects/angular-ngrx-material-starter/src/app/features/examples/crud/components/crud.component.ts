@@ -3,7 +3,7 @@ import { FormBuilder, NgForm } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { ROUTE_ANIMATIONS_ELEMENTS } from 'app/core/core.module';
+import { ROUTE_ANIMATIONS_ELEMENTS } from '../../../../core/core.module';
 
 import { Book } from '../books.model';
 import { BooksService } from '../books.service';

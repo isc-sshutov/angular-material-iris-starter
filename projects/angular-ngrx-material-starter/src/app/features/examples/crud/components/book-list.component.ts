@@ -5,7 +5,7 @@ import {
   EventEmitter,
   ViewChild
 } from '@angular/core';
-import { ROUTE_ANIMATIONS_ELEMENTS } from 'app/core/core.module';
+import { ROUTE_ANIMATIONS_ELEMENTS } from '../../../../core/core.module';
 import { Observable } from 'rxjs';
 import { Book } from '../books.model';
 import { MatPaginator, MatTableDataSource } from '@angular/material';
