@@ -5,7 +5,9 @@ services:
       context: .
       dockerfile: Dockerfile
     restart: always
+    command: --ISCAgent false
     ports:
+      - 1972
       - 7000:52773
     volumes:
       - ./dist:/opt/app/web
